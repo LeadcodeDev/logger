@@ -7,6 +7,6 @@ import BaseLogger from './BaseLogger'
 export default class WarnReport implements BaseLogger {
   public run (message: string): void {
     const currentTime = DateTime.now().toFormat('dd/MM/yyyy HH:mm:ss')
-    process.stdout.write(`${Color.Dim}[${currentTime}] ${Color.Reset + Color.Bright + Color.Yellow}warn${Color.Reset} : ${Color.White + message + Color.Reset}\n`)
+    process.stdout.write(`${Color.Dim}[${currentTime}] ${Color.Reset + Color.Bright + Color.Yellow}Warn${Color.Reset} : ${Color.White + message + Color.Reset}\n`)
   }
 }
